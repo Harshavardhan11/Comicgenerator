@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comic Strip Generator</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="jumbotron text-center">
+            <h1 class="display-4">Comic Strip Generator</h1>
+        </div>
+        <div id="comic-form" class="card">
+        <div class="card-body">
+        <form id="textForm">
+            <!-- Input fields for each comic panel -->
+            <div class="form-group">
+                <label for="panel1">Panel 1:</label>
+                <textarea id="panel1" class="form-control comic-input" rows="2"></textarea>
+            </div>
+
+            <!-- Repeat the above input fields for the remaining 9 panels -->
+            <div class="form-group">
+                <label for="panel2">Panel 2:</label>
+                <textarea id="panel2" class="form-control comic-input" rows="2"></textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="panel3">Panel 3:</label>
+                <textarea id="panel3" class="form-control comic-input" rows="2"></textarea>
+            </div>
+
+            <!-- Repeat the above input fields for the remaining 9 panels -->
+            <div class="form-group">
+                <label for="panel4">Panel 4:</label>
+                <textarea id="panel4" class="form-control comic-input" rows="2"></textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="panel5">Panel 5:</label>
+                <textarea id="panel5" class="form-control comic-input" rows="2"></textarea>
+            </div>
+
+            <!-- Repeat the above input fields for the remaining 9 panels -->
+            <div class="form-group">
+                <label for="panel6">Panel 6:</label>
+                <textarea id="panel6" class="form-control comic-input" rows="2"></textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="panel7">Panel 7:</label>
+                <textarea id="panel7" class="form-control comic-input" rows="2"></textarea>
+            </div>
+
+            <!-- Repeat the above input fields for the remaining 9 panels -->
+            <div class="form-group">
+                <label for="panel8">Panel 8:</label>
+                <textarea id="panel8" class="form-control comic-input" rows="2"></textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="panel9">Panel 9:</label>
+                <textarea id="panel9" class="form-control comic-input" rows="2"></textarea>
+            </div>
+
+            <!-- Repeat the above input fields for the remaining 9 panels -->
+            <div class="form-group">
+                <label for="panel10">Panel 10:</label>
+                <textarea id="panel10" class="form-control comic-input" rows="2"></textarea>
+            </div>
+            <!-- ... Repeat for panels 3 to 10 ... -->
+
+            <button type="button" class="btn btn-primary mt-3" onclick="generateComic()">Generate Comic</button>
+        </form>
+    </div>
+    </div>
+        <div id="comic-display" class="hidden"></div>
+        <div id="error-message" class="error-message hidden"></div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+</body>
+</html>
